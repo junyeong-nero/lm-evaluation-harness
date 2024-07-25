@@ -1,6 +1,7 @@
 group: kormedmcqa
 task:
   - kormedmcqa_doctor
+  - kormedmcqa_dentist
   - kormedmcqa_nurse
   - kormedmcqa_pharm
 aggregate_metric_list:
