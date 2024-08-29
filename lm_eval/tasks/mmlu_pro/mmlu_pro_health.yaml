@@ -2,4 +2,5 @@ description: "The following are multiple choice questions (with answers) about h
 include: "_default_template_yaml"
 task: "mmlu_pro_health"
 task_alias: "health"
-process_docs: !function utils.process_health
+# process_docs: !function utils.process_health
+# health만 추출해서 사용하기 때문에 필요없음.

@@ -22,20 +22,22 @@ choices = [
 
 
 def format_cot_example(example, including_answer=True):
-    prompt = "Question:\n"
+    prompt = "질문:\n"
     question = example["question"]
     options = example["options"]
     prompt += question + "\n"
-    prompt += "Options:\n"
+    prompt += "보기:\n"
     for i, opt in enumerate(options):
         prompt += "{}. {}\n".format(choices[i], opt)
     if including_answer:
         cot_content = example["cot_content"].replace(
-            "A: Let's think step by step.", "Answer: Let's think step by step."
+            "A: 차근차근 생각해 봅시다.", "답변: 단계별로 생각해 봅시다."
+        ).replace(
+            "A: 단계별로 생각해 봅시다.", "답변: 단계별로 생각해 봅시다."
         )
         prompt += cot_content + "\n\n"
     else:
-        prompt += "Answer: Let's think step by step."
+        prompt += "답변: 단계별로 생각해 봅시다."
     return prompt
 
 
