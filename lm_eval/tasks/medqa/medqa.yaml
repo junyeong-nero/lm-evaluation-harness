@@ -1,5 +1,5 @@
 task: medqa_4options
-dataset_path: GBaker/MedQA-USMLE-4-options-hf
+dataset_path: junyeong-nero/med-qa-translated
 output_type: multiple_choice
 training_split: train
 validation_split: validation
