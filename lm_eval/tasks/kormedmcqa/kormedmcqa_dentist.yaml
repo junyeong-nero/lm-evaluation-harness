@@ -1,5 +1,5 @@
 task : kormedmcqa_dentist
-dataset_path : ChuGyouk/KorMedMCQA_edited
+dataset_path : sean0042/KorMedMCQA
 dataset_name : dentist
 test_split : test
 fewshot_split : dev
