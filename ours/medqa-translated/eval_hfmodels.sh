@@ -3,7 +3,7 @@
 
 lm_eval --model hf \
     --model_args pretrained=upstage/SOLAR-10.7B-v1.0 \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -13,7 +13,7 @@ lm_eval --model hf \
 
 lm_eval --model hf \
     --model_args pretrained=upstage/SOLAR-10.7B-Instruct-v1.0 \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -23,7 +23,7 @@ lm_eval --model hf \
 
 lm_eval --model hf \
     --model_args pretrained=yanolja/EEVE-Korean-10.8B-v1.0 \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -33,7 +33,7 @@ lm_eval --model hf \
 
 lm_eval --model hf \
     --model_args pretrained=yanolja/EEVE-Korean-Instruct-10.8B-v1.0 \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -47,7 +47,7 @@ rm -rf /root/.cache/huggingface/hub
 
 lm_eval --model hf \
     --model_args pretrained=google/gemma-2-9b \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -57,7 +57,7 @@ lm_eval --model hf \
 
 lm_eval --model hf \
     --model_args pretrained=google/gemma-2-9b-it \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -67,7 +67,7 @@ lm_eval --model hf \
 
 lm_eval --model hf \
     --model_args pretrained=ChuGyouk/gemma-2-9b-InitializedEmbeds \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -77,7 +77,7 @@ lm_eval --model hf \
 
 lm_eval --model hf \
     --model_args pretrained=Qwen/Qwen2-7B \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -87,7 +87,7 @@ lm_eval --model hf \
 
 lm_eval --model hf \
     --model_args pretrained=Qwen/Qwen2-7B-Instruct \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -101,7 +101,7 @@ rm -rf /root/.cache/huggingface/hub
 
 lm_eval --model hf \
     --model_args pretrained=mistralai/Mistral-Nemo-Base-2407 \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -111,7 +111,7 @@ lm_eval --model hf \
 
 lm_eval --model hf \
     --model_args pretrained=mistralai/Mistral-Nemo-Instruct-2407 \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -125,7 +125,7 @@ rm -rf /root/.cache/huggingface/hub
 
 lm_eval --model hf \
     --model_args pretrained=UCLA-AGI/Gemma-2-9B-It-SPPO-Iter3 \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -135,7 +135,7 @@ lm_eval --model hf \
 
 lm_eval --model hf \
     --model_args pretrained=meta-llama/Meta-Llama-3.1-8B \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
@@ -145,7 +145,7 @@ lm_eval --model hf \
 
 lm_eval --model hf \
     --model_args pretrained=meta-llama/Meta-Llama-3.1-8B-Instruct \
-    --tasks medqa \
+    --tasks medqa_4options \
     --device cuda:0 \
     --num_fewshot 5 \
     --batch_size 8 \
