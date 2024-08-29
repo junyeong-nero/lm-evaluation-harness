@@ -1,0 +1,39 @@
+task : kormedmcqa_doctor
+dataset_path : sean0042/KorMedMCQA
+dataset_name : doctor
+test_split : test
+fewshot_split : dev
+fewshot_config:
+  sampler: first_n
+  doc_to_text: !function utils.fewshot_to_text
+  doc_to_target: ""
+output_type: generate_until
+doc_to_text: !function utils.doc_to_text
+doc_to_target: !function utils.doc_to_target
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+    ignore_case: true
+    ignore_punctuation: true
+    regexes_to_ignore:
+          - " "
+  # - name: "get-answer"
+  #   filter:
+  #     - function: "regex"
+  #       regex_pattern: "(?<=정답은)(.*)(?=입니다.)"
+  #       regex_pattern: "(?<=정답은)\\s*[(]?(A|B|C|D)[)]?.*(?=입니다.)"
+  #     - function: "take_first"
+generation_kwargs:
+  until:
+    - "Q:"
+    - "\n\n"
+    - "</s>"
+    - "."
+    - "<|im_end|>"
+    - "<|end_of_text|>"
+    - "<|eot_id|>"
+    - "<eos>"
+    - "<end_of_turn>"
+  do_sample: false
+  temperature: 0.0

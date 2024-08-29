@@ -4,6 +4,10 @@ task:
   - kormedmcqa_dentist
   - kormedmcqa_nurse
   - kormedmcqa_pharm
+  - kormedmcqa_doctor_cot
+  - kormedmcqa_dentist_cot
+  - kormedmcqa_nurse_cot
+  - kormedmcqa_pharm_cot
 aggregate_metric_list:
   - metric: exact_match
     aggregation: mean
