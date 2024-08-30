@@ -1,5 +1,5 @@
 task: pubmedqa
-dataset_path: junyeong-nero/PubMedQA-translated?row=0
+dataset_path: junyeong-nero/PubMedQA-translated
 dataset_name: pubmed_qa_labeled_fold0_source
 output_type: multiple_choice
 training_split: train
