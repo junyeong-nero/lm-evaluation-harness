@@ -8,6 +8,8 @@ def format_cot_example(example, including_answer=True):
     for opt in "ABCDE":
         prompt += "{}. {}\n".format(opt, example[opt])
     if including_answer:
+        # CoT Prompt 수정필요
+        # KMMLU에서는 "기하학 관련 정보를 위해 위키피디아를 참조하겠습니다." 같은 문장 사용
         cot_content = example["cot_content"].replace(
             "A: 차근차근 생각해 봅시다.", "답변: 단계별로 생각해 봅시다."
         ).replace(
